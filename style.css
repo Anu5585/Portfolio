@@ -1,0 +1,150 @@
+header {
+  background-color: #5a5a5a;
+  text-align: center;
+  color: white;
+  /* position: fixed; */
+  width: 100%;
+  overflow: hidden;
+  text-decoration: underline;
+}
+
+.content-box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  background-color: #846060;
+  margin: 0px 0px 17px;
+}
+
+.content-box img {
+  max-width: 40%;
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0px 0px 10px 10px rgba(255, 205, 205, 0.5);
+  padding: 8px;
+  transition: 0.5s;
+  /* height: 70vh; */
+  height: fit-content;
+}
+
+.text-side {
+  flex: 1;
+  /* margin-left: 20px; */
+}
+.text-side h3 {
+  color: #333;
+  opacity: 0;
+  animation: slideIn 3s forwards;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(10px);
+  }
+}
+.text-side h2 {
+  color: #464141;
+}
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  color: rgb(134, 99, 99);
+}
+nav ul li a {
+  color: rgb(184, 221, 254);
+  text-decoration: underline;
+}
+footer {
+  background-color: #6d2222;
+  color: white;
+  margin: -17px 0px;
+  padding-bottom: 45px;
+  text-align: center;
+  justify-content: end;
+  align-items: end;
+}
+footer p {
+  font-size: 13px;
+}
+.social-icons {
+  text-align: center;
+  justify-content: end;
+  align-items: end;
+  gap: 5px;
+  /* margin-top: 30px; */
+}
+
+.social-icons a {
+  color: white;
+  font-size: 10px;
+}
+
+.Contact {
+  background-color: #bc9e9e;
+  padding: 99px;
+  text-align: center;
+  color: white;
+  margin: 79px 20px 20px 20px;
+  border-radius: 15px;
+  border-style: 2px solid #bc9e9e;
+}
+.bgc {
+  background-color: #ffcdcd;
+  width: 100vw;
+  height: 100vh;
+}
+.bgc img {
+  border-radius: 20px;
+  box-shadow: inset;
+  box-shadow: 0px 0px 10px 10px rgba(255, 205, 205, 0.5);
+  width: 20%;
+  height: 20%;
+  margin: 10px;
+  padding: 10px;
+  transition: 0.5s;
+}
+header {
+  background-color: #6d2222;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.burger {
+  display: none;
+  position: absolute;
+  cursor: pointer;
+  right: 5px;
+  top: 15px;
+}
+.line {
+  width: 33px;
+  background-color: #fff;
+  height: 4px;
+  margin: 3px 3px;
+}
+
+@media only screen and (max-width: 1140px) {
+  header {
+    flex-direction: column;
+  }
+  nav {
+    flex-direction: column;
+  }
+  /* .burger{
+    display: block;
+  } */
+  .h-nav {
+    height: 72px;
+  }
+  .v-class {
+    opacity: 0;
+  }
+}
